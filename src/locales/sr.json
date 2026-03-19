@@ -4,7 +4,5 @@
   "downloadButtonLabel": "Preuzimanje fajla",
   "brokenFile": "Vaš fajl nije dobar. Molimo Vas da probate da ga otvorite na vašem računaru.",
   "msgPluginRecipients": "Primaoci",
-  "msgPluginSender": "Pošiljalac",
-  "pdfPluginLoading": "Učitavanje...",
-  "pdfPluginPageNumber": "Strana {{ currentPage }}/{{ allPagesCount }}"
+  "msgPluginSender": "Pošiljalac"
 }

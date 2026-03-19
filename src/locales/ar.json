@@ -4,7 +4,5 @@
   "downloadButtonLabel": "تحميل الملف",
   "brokenFile": "الملف تالف، يرجى التحقق منه على جهازك الخاص.",
   "msgPluginRecipients": "المستلمين",
-  "msgPluginSender": "المرسل",
-  "pdfPluginLoading": "تحميل ...",
-  "pdfPluginPageNumber": " {{ allPagesCount }} \\ {{ currentPage }} صفحة "
+  "msgPluginSender": "المرسل"
 }

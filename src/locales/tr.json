@@ -4,7 +4,5 @@
   "downloadButtonLabel": "Dosyayı indir",
   "brokenFile": "Dosyanız bozuk. Lütfen kendi cihazınızda kontrol edin.",
   "msgPluginRecipients": "Alıcılar",
-  "msgPluginSender": "Gönderen",
-  "pdfPluginLoading": "Yükleniyor...",
-  "pdfPluginPageNumber": "Sayfa {{ currentPage }}/{{ allPagesCount }}"
+  "msgPluginSender": "Gönderen"
 }

@@ -1,8 +1,11 @@
 {
-  "name": "@cyntler/react-doc-viewer",
-  "version": "1.17.1",
+  "name": "@bryus/react-doc-viewer",
+  "version": "2.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "File viewer for React.",
-  "author": "Matthew Mogford / Damian Cyntler",
+  "author": "Matthew Mogford / Damian Cyntler / Yury Broitman",
   "type": "module",
   "keywords": [
     "reactjs",
@@ -11,9 +14,9 @@
     "doc-viewer"
   ],
   "license": "Apache License 2.0",
-  "homepage": "https://cyntler.github.io/react-doc-viewer",
+  "homepage": "https://github.com/Bryus/react-doc-viewer",
   "repository": {
-    "url": "https://github.com/cyntler/react-doc-viewer"
+    "url": "https://github.com/Bryus/react-doc-viewer"
   },
   "files": [
     "dist/**"
@@ -41,20 +44,17 @@
     "prettier:fix": "prettier --write .",
     "storybook:build": "rm -rf storybook-static && storybook build",
     "deploy": "npm run storybook:build && gh-pages --nojekyll -d storybook-static --message 'feat: storybook deploy'",
-    "prerelease": "git checkout main && git pull && npm run prettier:check && npm run lint && npm run test && npm run build && node ./scripts/copy-worker.mjs && cd use-cases/nextjs && npm i && npm run build",
+    "prerelease": "git checkout main && git pull && npm run prettier:check && npm run lint && npm run test && npm run build",
     "release": "release-it && npm run deploy",
     "build-readme-toc": "npx doctoc README.md --title '## Table of Contents'",
+    "prepack": "npm run build",
     "prepublish": "npm run build-readme-toc"
   },
   "dependencies": {
-    "@types/mustache": "^4.2.5",
-    "@types/papaparse": "^5.3.14",
-    "ajv": "^7.2.4",
-    "core-js": "^3.37.1",
+    "core-js": "^3.49.0",
     "mustache": "^4.2.0",
-    "papaparse": "^5.4.1",
-    "react-pdf": "^9.0.0",
-    "styled-components": "^6.1.11"
+    "papaparse": "^5.5.3",
+    "styled-components": "^6.3.12"
   },
   "devDependencies": {
     "@rollup/plugin-dsv": "^3.0.4",
@@ -68,7 +68,9 @@
     "@testing-library/jest-dom": "^6.4.5",
     "@testing-library/react": "^15.0.7",
     "@testing-library/user-event": "^14.5.2",
+    "@types/mustache": "^4.2.5",
     "@types/node": "^20.12.13",
+    "@types/papaparse": "^5.3.14",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@types/react-router-dom": "^5.3.3",
@@ -82,7 +84,7 @@
     "eslint-plugin-storybook": "^0.8.0",
     "file-loader": "^6.2.0",
     "gh-pages": "^6.1.1",
-    "happy-dom": "^14.12.0",
+    "happy-dom": "^20.8.4",
     "prettier": "^3.2.5",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -90,7 +92,7 @@
     "storybook": "^8.1.5",
     "typescript": "^5.4.5",
     "vite": "^5.2.12",
-    "vite-plugin-dts": "^3.9.1",
+    "vite-plugin-dts": "^4.5.4",
     "vite-plugin-node-polyfills": "^0.22.0",
     "vitest": "^1.6.0",
     "vitest-fetch-mock": "^0.2.2",

@@ -4,7 +4,5 @@
   "downloadButtonLabel": "Baixar arquivo",
   "brokenFile": "Seu arquivo está quebrado. Por favor, verifique-o em sua máquina.",
   "msgPluginRecipients": "Destinatários",
-  "msgPluginSender": "Remetente",
-  "pdfPluginLoading": "Carregando...",
-  "pdfPluginPageNumber": "Página {{ currentPage }}/{{ allPagesCount }}"
+  "msgPluginSender": "Remetente"
 }

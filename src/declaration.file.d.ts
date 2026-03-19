@@ -1,6 +1,5 @@
 /// <reference types="vite/client" />
 declare module "*.png";
-declare module "*.pdf";
 declare module "*.gif";
 declare module "*.csv";
 declare module "*.eps";

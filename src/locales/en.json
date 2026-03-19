@@ -4,7 +4,5 @@
   "downloadButtonLabel": "Download file",
   "brokenFile": "Your file is broken. Please check it on your machine.",
   "msgPluginRecipients": "Recipients",
-  "msgPluginSender": "Sender",
-  "pdfPluginLoading": "Loading...",
-  "pdfPluginPageNumber": "Page {{ currentPage }}/{{ allPagesCount }}"
+  "msgPluginSender": "Sender"
 }

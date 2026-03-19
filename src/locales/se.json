@@ -4,7 +4,5 @@
   "downloadButtonLabel": "Ladda ner",
   "brokenFile": "Filen är trasig. Var vänlig kontrollera den på din maskin.",
   "msgPluginRecipients": "Mottagare",
-  "msgPluginSender": "Avsändare",
-  "pdfPluginLoading": "Laddar...",
-  "pdfPluginPageNumber": "Sida {{ currentPage }}/{{ allPagesCount }}"
+  "msgPluginSender": "Avsändare"
 }

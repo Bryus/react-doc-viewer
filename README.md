@@ -1,17 +1,10 @@
-[![npm-version](https://img.shields.io/npm/v/@cyntler/react-doc-viewer.svg)](https://www.npmjs.com/package/@cyntler/react-doc-viewer)
-[![npm-download](https://img.shields.io/npm/dt/@cyntler/react-doc-viewer.svg)](https://www.npmjs.com/package/@cyntler/react-doc-viewer)
+[![npm-version](https://img.shields.io/npm/v/@bryus/react-doc-viewer.svg)](https://www.npmjs.com/package/@bryus/react-doc-viewer)
+[![npm-download](https://img.shields.io/npm/dt/@bryus/react-doc-viewer.svg)](https://www.npmjs.com/package/@bryus/react-doc-viewer)
+# react-doc-viewer
 
-## I am stopping work on this library
+File viewer for **React v18+**.
 
-> [!WARNING]
-**Due to lack of free time to develop this library, I am stopping work on this library.<br>
-> It will not be developed in the near future.**
-
-# @cyntler/react-doc-viewer
-
-File viewer for **React v17+**.
-
-> This is a fork of https://github.com/Alcumus/react-doc-viewer (inactivity for a long time).
+> This is a fork of https://github.com/cyntler/react-doc-viewer.
 
 ## Important note!
 
@@ -65,7 +58,6 @@ File viewer for **React v17+**.
 | html      | text/html                                                                 | |
 | jpg       | image/jpg                                                                 | |
 | jpeg      | image/jpeg                                                                | |
-| pdf       | application/pdf                                                           | |
 | png       | image/png                                                                 | |
 | ppt       | application/vnd.ms-powerpoint                                             | Public URLs only! |
 | pptx      | application/vnd.openxmlformats-officedocument.presentationml.presentation | Public URLs only! |
@@ -76,18 +68,14 @@ File viewer for **React v17+**.
 | mp4       | video/mp4                                                                 | |
 | webp      | image/webp                                                                | |
 
-## Storybook Demo
-
-https://cyntler.github.io/react-doc-viewer
-
 ## Installation
 
 Use one of the package managers for Node.js.
 
 ```bash
- npm i @cyntler/react-doc-viewer
+ npm i @bryus/react-doc-viewer
  # or
- yarn add @cyntler/react-doc-viewer
+ yarn add @bryus/react-doc-viewer
 ```
 
 ## Usage
@@ -96,10 +84,10 @@ Use one of the package managers for Node.js.
 
 ### Required styles
 
-The library exports a CSS file containing classes needed for correct rendering of e.g. PDF files. It is best to include it at the beginning of the application or in the place where you use this library.
+The library exports a stylesheet entrypoint. Import it once at the beginning of the application or alongside the component usage.
 
 ```tsx
-import "@cyntler/react-doc-viewer/dist/index.css";
+import "@bryus/react-doc-viewer/dist/index.css";
 ```
 
 ### Basic
@@ -108,13 +96,13 @@ DocViewer requires at least an array of document objects to function.
 Each document object must have a uri to a file, either a url that returns a file or a local file.
 
 ```tsx
-import DocViewer, { DocViewerRenderers } from "@cyntler/react-doc-viewer";
-import "@cyntler/react-doc-viewer/dist/index.css";
+import DocViewer, { DocViewerRenderers } from "@bryus/react-doc-viewer";
+import "@bryus/react-doc-viewer/dist/index.css";
 
 function App() {
   const docs = [
-    { uri: "https://url-to-my-pdf.pdf" }, // Remote file
-    { uri: require("./example-files/pdf.pdf") }, // Local File
+    { uri: "https://url-to-my-image.png" }, // Remote file
+    { uri: require("./example-files/image.png") }, // Local File
   ];
 
   return <DocViewer documents={docs} pluginRenderers={DocViewerRenderers} />;
@@ -126,13 +114,13 @@ function App() {
 By default, the first item in your `documents` array will be displayed after the component is rendered. However, there is a prop `initialActiveDocument` that you can point to the initial document that should be displayed.
 
 ```tsx
-import DocViewer, { DocViewerRenderers } from "@cyntler/react-doc-viewer";
-import "@cyntler/react-doc-viewer/dist/index.css";
+import DocViewer, { DocViewerRenderers } from "@bryus/react-doc-viewer";
+import "@bryus/react-doc-viewer/dist/index.css";
 
 const App = () => {
   const docs = [
-    { uri: "https://url-to-my-pdf.pdf" }, // Remote file
-    { uri: require("./example-files/pdf.pdf") }, // Local File
+    { uri: "https://url-to-my-image.png" }, // Remote file
+    { uri: require("./example-files/image.png") }, // Local File
   ];
 
   return (
@@ -152,8 +140,8 @@ From version **1.11.0** you can control the displayed document through two props
 ```jsx
 const DocViewerControlOverDisplayedDocument = () => {
   const docs = [
-    { uri: "https://url-to-my-pdf.pdf" }, // Remote file
-    { uri: require("./example-files/pdf.pdf") }, // Local File
+    { uri: "https://url-to-my-image.png" }, // Remote file
+    { uri: require("./example-files/image.png") }, // Local File
   ];
   const [activeDocument, setActiveDocument] = useState(docs[0]);
 
@@ -185,7 +173,7 @@ const DocViewerWithInputApp = () => {
     <>
       <input
         type="file"
-        accept=".pdf"
+        accept=".png,.jpg,.jpeg,.gif,.webp"
         multiple
         onChange={(el) =>
           el.target.files?.length &&
@@ -210,8 +198,8 @@ To use the included renderers.
 `DocViewerRenderers` is an Array of all the included renderers.
 
 ```tsx
-import DocViewer, { DocViewerRenderers } from "@cyntler/react-doc-viewer";
-import "@cyntler/react-doc-viewer/dist/index.css";
+import DocViewer, { DocViewerRenderers } from "@bryus/react-doc-viewer";
+import "@bryus/react-doc-viewer/dist/index.css";
 
 <DocViewer
   pluginRenderers={DocViewerRenderers}
@@ -222,11 +210,11 @@ import "@cyntler/react-doc-viewer/dist/index.css";
 Or you can import individual renderers.
 
 ```tsx
-import DocViewer, { PDFRenderer, PNGRenderer } from "@cyntler/react-doc-viewer";
-import "@cyntler/react-doc-viewer/dist/index.css";
+import DocViewer, { PNGRenderer, JPGRenderer } from "@bryus/react-doc-viewer";
+import "@bryus/react-doc-viewer/dist/index.css";
 
 <DocViewer
-  pluginRenderers={[PDFRenderer, PNGRenderer]}
+  pluginRenderers={[PNGRenderer, JPGRenderer]}
   {/* ... */}
 />;
 ```
@@ -237,7 +225,7 @@ To create a custom renderer, that will just exist for your project.
 
 ```tsx
 import React from "react";
-import DocViewer from "@cyntler/react-doc-viewer";
+import DocViewer from "@bryus/react-doc-viewer";
 
 const MyCustomPNGRenderer: DocRenderer = ({
   mainState: { currentDocument },
@@ -258,8 +246,8 @@ MyCustomPNGRenderer.weight = 1;
 And supply it to `pluginRenderers` inside an `Array`.
 
 ```tsx
-import DocViewer, { DocViewerRenderers } from "@cyntler/react-doc-viewer";
-import "@cyntler/react-doc-viewer/dist/index.css";
+import DocViewer, { DocViewerRenderers } from "@bryus/react-doc-viewer";
+import "@bryus/react-doc-viewer/dist/index.css";
 
 <DocViewer
   pluginRenderers={[MyCustomPNGRenderer]}
@@ -273,7 +261,7 @@ import "@cyntler/react-doc-viewer/dist/index.css";
 
 ### Custom File Loader
 
-If you need to prevent the actual loading of the file by `@cyntler/react-doc-viewer`.<br>
+If you need to prevent the actual loading of the file by `@bryus/react-doc-viewer`.<br>
 You can decorate your custom renderer with a callback to do as you wish. e.g. Load the file yourself in an iFrame.
 
 ```tsx
@@ -311,11 +299,11 @@ You can provide a theme object with one or all of the available properties.
 ## Custom pre-fetch HTTP Verb
 
 Some services (such as AWS) provide URLs that works only for one pre-configured verb.
-By default, `@cyntler/react-doc-viewer` fetches document metadata through a `HEAD` request in order to guess its `Content-Type`.
+By default, `@bryus/react-doc-viewer` fetches document metadata through a `HEAD` request in order to guess its `Content-Type`.
 If you need to have a specific verb for the pre-fetching, use the `prefetchMethod` option on the DocViewer:
 
 ```tsx
-import DocViewer, { DocViewerRenderers } from "@cyntler/react-doc-viewer";
+import DocViewer, { DocViewerRenderers } from "@bryus/react-doc-viewer";
 
 <DocViewer prefetchMethod="GET" />;
 ```
@@ -390,7 +378,7 @@ const MyDocViewer = styled(DocViewer)`
 Since **v1.13.0** you can control the display of the document with `reference`.
 
 ```tsx
-import DocViewer, { DocViewerRef } from "@cyntler/react-doc-viewer";
+import DocViewer, { DocViewerRef } from "@bryus/react-doc-viewer";
 
 export const UsingRef = () => {
   const docViewerRef = useRef<DocViewerRef>(null);
@@ -429,11 +417,6 @@ You can provide a config object, which configures parts of the component as requ
       retainURLParams: false,
     },
     csvDelimiter: ",", // "," as default,
-    pdfZoom: {
-      defaultZoom: 1.1, // 1 as default,
-      zoomJump: 0.2, // 0.1 as default,
-    },
-    pdfVerticalScrollByDefault: true, // false as default
   }}
 />
 ```

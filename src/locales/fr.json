@@ -4,7 +4,5 @@
   "downloadButtonLabel": "Télécharger le fichier",
   "brokenFile": "Votre fichier est cassé. Veuillez le vérifier sur votre machine.",
   "msgPluginRecipients": "Destinataires",
-  "msgPluginSender": "Expéditeur",
-  "pdfPluginLoading": "Chargement...",
-  "pdfPluginPageNumber": "Page {{ currentPage }}/{{ allPagesCount }}"
+  "msgPluginSender": "Expéditeur"
 }

@@ -28,9 +28,7 @@ type ContentsProps = {
       | "downloadButtonLabel"
       | "brokenFile"
       | "msgPluginRecipients"
-      | "msgPluginSender"
-      | "pdfPluginLoading"
-      | "pdfPluginPageNumber",
+      | "msgPluginSender",
     variables?: Record<string, string | number>,
   ) => string;
 };
