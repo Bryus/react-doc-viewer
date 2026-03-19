@@ -3,6 +3,13 @@
   "noRendererMessage": "ファイルタイプに対応したレンダラーはありません: {{ fileType }}",
   "downloadButtonLabel": "ダウンロード",
   "brokenFile": "ファイルが壊れています。あなたのマシンでファイルを確認してください。",
+  "pdfRendererLoading": "ドキュメントを読み込み中...",
+  "pdfRendererErrorTitle": "プレビュー用のファイルを読み込めませんでした",
+  "pdfRendererDocumentNotFound": "ドキュメントが見つかりません",
+  "pdfRendererFetchError": "ドキュメントを読み込めませんでした。",
+  "pdfRendererFetchErrorWithStatus": "ドキュメントを読み込めませんでした ({{ status }}).",
+  "pdfRendererRenderError": "iframe でドキュメントを表示できませんでした。",
+  "pdfRendererRetryButton": "再試行",
   "msgPluginRecipients": "受信者",
   "msgPluginSender": "送信者"
 }

@@ -3,6 +3,13 @@
   "noRendererMessage": "Не постоји прегледач за тип фајла: {{ fileType }}",
   "downloadButtonLabel": "Преузимање фајла",
   "brokenFile": "Ваш фајл није добар. Молимо Вас да пробате да га отворите на вашем рачунару.",
+  "pdfRendererLoading": "Учитавање документа...",
+  "pdfRendererErrorTitle": "Није могуће учитати фајл за преглед",
+  "pdfRendererDocumentNotFound": "Документ није пронађен",
+  "pdfRendererFetchError": "Није могуће учитати документ.",
+  "pdfRendererFetchErrorWithStatus": "Није могуће учитати документ ({{ status }}).",
+  "pdfRendererRenderError": "Грешка при приказу документа у iframe-у.",
+  "pdfRendererRetryButton": "Покушај поново",
   "msgPluginRecipients": "Примаоци",
   "msgPluginSender": "Пошиљалац"
 }

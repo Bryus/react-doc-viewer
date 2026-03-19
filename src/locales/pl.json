@@ -3,6 +3,13 @@
   "noRendererMessage": "Brak funckji renderującej dla: {{{ fileType }}}",
   "downloadButtonLabel": "Pobierz plik",
   "brokenFile": "Twój plik jest uszkodzony. Sprawdź go na swoim komputerze.",
+  "pdfRendererLoading": "Ładowanie dokumentu...",
+  "pdfRendererErrorTitle": "Nie udało się załadować pliku do podglądu",
+  "pdfRendererDocumentNotFound": "Nie znaleziono dokumentu",
+  "pdfRendererFetchError": "Nie udało się załadować dokumentu.",
+  "pdfRendererFetchErrorWithStatus": "Nie udało się załadować dokumentu ({{ status }}).",
+  "pdfRendererRenderError": "Błąd wyświetlania dokumentu w ramce iframe.",
+  "pdfRendererRetryButton": "Spróbuj ponownie",
   "msgPluginRecipients": "Odbiorcy",
   "msgPluginSender": "Nadawca"
 }

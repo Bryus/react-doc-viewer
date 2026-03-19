@@ -3,6 +3,13 @@
   "noRendererMessage": "Aucun moteur de rendu pour le type de fichier : {{{ fileType }}}",
   "downloadButtonLabel": "Télécharger le fichier",
   "brokenFile": "Votre fichier est cassé. Veuillez le vérifier sur votre machine.",
+  "pdfRendererLoading": "Chargement du document...",
+  "pdfRendererErrorTitle": "Impossible de charger le fichier pour l'aperçu",
+  "pdfRendererDocumentNotFound": "Document introuvable",
+  "pdfRendererFetchError": "Impossible de charger le document.",
+  "pdfRendererFetchErrorWithStatus": "Impossible de charger le document ({{ status }}).",
+  "pdfRendererRenderError": "Erreur lors de l'affichage du document dans l'iframe.",
+  "pdfRendererRetryButton": "Réessayer",
   "msgPluginRecipients": "Destinataires",
   "msgPluginSender": "Expéditeur"
 }

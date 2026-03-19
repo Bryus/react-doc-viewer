@@ -3,6 +3,13 @@
   "noRendererMessage": "Nessun renderer per il tipo di file: {{{ fileType }}}",
   "downloadButtonLabel": "Scarica file",
   "brokenFile": "Il tuo file è danneggiato. Controllalo sul tuo computer.",
+  "pdfRendererLoading": "Caricamento del documento...",
+  "pdfRendererErrorTitle": "Impossibile caricare il file per l'anteprima",
+  "pdfRendererDocumentNotFound": "Documento non trovato",
+  "pdfRendererFetchError": "Impossibile caricare il documento.",
+  "pdfRendererFetchErrorWithStatus": "Impossibile caricare il documento ({{ status }}).",
+  "pdfRendererRenderError": "Errore durante la visualizzazione del documento nell'iframe.",
+  "pdfRendererRetryButton": "Riprova",
   "msgPluginRecipients": "Destinatari",
   "msgPluginSender": "Mittente"
 }

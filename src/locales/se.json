@@ -3,6 +3,13 @@
   "noRendererMessage": "Ingen renderare för filtypen: {{{ fileType }}}",
   "downloadButtonLabel": "Ladda ner",
   "brokenFile": "Filen är trasig. Var vänlig kontrollera den på din maskin.",
+  "pdfRendererLoading": "Laddar dokument...",
+  "pdfRendererErrorTitle": "Kunde inte läsa in filen för förhandsvisning",
+  "pdfRendererDocumentNotFound": "Dokumentet hittades inte",
+  "pdfRendererFetchError": "Kunde inte läsa in dokumentet.",
+  "pdfRendererFetchErrorWithStatus": "Kunde inte läsa in dokumentet ({{ status }}).",
+  "pdfRendererRenderError": "Det gick inte att visa dokumentet i en iframe.",
+  "pdfRendererRetryButton": "Försök igen",
   "msgPluginRecipients": "Mottagare",
   "msgPluginSender": "Avsändare"
 }

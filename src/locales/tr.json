@@ -3,6 +3,13 @@
   "noRendererMessage": "Dosya türü için görüntüleyici bulunamadı: {{{ fileType }}}",
   "downloadButtonLabel": "Dosyayı indir",
   "brokenFile": "Dosyanız bozuk. Lütfen kendi cihazınızda kontrol edin.",
+  "pdfRendererLoading": "Belge yükleniyor...",
+  "pdfRendererErrorTitle": "Önizleme için dosya yüklenemedi",
+  "pdfRendererDocumentNotFound": "Belge bulunamadı",
+  "pdfRendererFetchError": "Belge yüklenemedi.",
+  "pdfRendererFetchErrorWithStatus": "Belge yüklenemedi ({{ status }}).",
+  "pdfRendererRenderError": "Belge iframe içinde görüntülenemedi.",
+  "pdfRendererRetryButton": "Tekrar dene",
   "msgPluginRecipients": "Alıcılar",
   "msgPluginSender": "Gönderen"
 }

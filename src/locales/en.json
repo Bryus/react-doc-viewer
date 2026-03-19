@@ -3,6 +3,13 @@
   "noRendererMessage": "No renderer for file type: {{{ fileType }}}",
   "downloadButtonLabel": "Download file",
   "brokenFile": "Your file is broken. Please check it on your machine.",
+  "pdfRendererLoading": "Loading document...",
+  "pdfRendererErrorTitle": "Unable to load the file for preview",
+  "pdfRendererDocumentNotFound": "Document not found",
+  "pdfRendererFetchError": "Unable to load the document.",
+  "pdfRendererFetchErrorWithStatus": "Unable to load the document ({{ status }}).",
+  "pdfRendererRenderError": "Error displaying the document in iframe.",
+  "pdfRendererRetryButton": "Retry",
   "msgPluginRecipients": "Recipients",
   "msgPluginSender": "Sender"
 }

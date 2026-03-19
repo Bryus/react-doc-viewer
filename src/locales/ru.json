@@ -3,6 +3,13 @@
   "noRendererMessage": "Данный тип файла не поддерживается рендером: {{{ fileType }}}",
   "downloadButtonLabel": "Скачать файл",
   "brokenFile": "Ваш файл сломан. Пожалуйста, проверьте его на своём комьютере.",
+  "pdfRendererLoading": "Загрузка документа...",
+  "pdfRendererErrorTitle": "Не удалось загрузить файл на просмотр",
+  "pdfRendererDocumentNotFound": "Документ не найден",
+  "pdfRendererFetchError": "Не удалось загрузить документ.",
+  "pdfRendererFetchErrorWithStatus": "Не удалось загрузить документ ({{ status }}).",
+  "pdfRendererRenderError": "Ошибка отображения документа в iframe.",
+  "pdfRendererRetryButton": "Повторить попытку",
   "msgPluginRecipients": "Получатели",
   "msgPluginSender": "Отправитель"
 }

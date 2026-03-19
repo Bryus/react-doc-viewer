@@ -3,6 +3,13 @@
   "noRendererMessage": "No hay procesador para el tipo de archivo: {{{ fileType }}}",
   "downloadButtonLabel": "Descargar archivo",
   "brokenFile": "Tu archivo está roto. Compruébalo en tu máquina.",
+  "pdfRendererLoading": "Cargando documento...",
+  "pdfRendererErrorTitle": "No se pudo cargar el archivo para la vista previa",
+  "pdfRendererDocumentNotFound": "No se encontró el documento",
+  "pdfRendererFetchError": "No se pudo cargar el documento.",
+  "pdfRendererFetchErrorWithStatus": "No se pudo cargar el documento ({{ status }}).",
+  "pdfRendererRenderError": "Error al mostrar el documento en el iframe.",
+  "pdfRendererRetryButton": "Reintentar",
   "msgPluginRecipients": "Destinatarios",
   "msgPluginSender": "Remitente"
 }

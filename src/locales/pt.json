@@ -3,6 +3,13 @@
   "noRendererMessage": "Nenhum renderizador para o tipo de arquivo: {{{ fileType }}}",
   "downloadButtonLabel": "Baixar arquivo",
   "brokenFile": "Seu arquivo está quebrado. Por favor, verifique-o em sua máquina.",
+  "pdfRendererLoading": "Carregando documento...",
+  "pdfRendererErrorTitle": "Não foi possível carregar o arquivo para visualização",
+  "pdfRendererDocumentNotFound": "Documento não encontrado",
+  "pdfRendererFetchError": "Não foi possível carregar o documento.",
+  "pdfRendererFetchErrorWithStatus": "Não foi possível carregar o documento ({{ status }}).",
+  "pdfRendererRenderError": "Erro ao exibir o documento no iframe.",
+  "pdfRendererRetryButton": "Tentar novamente",
   "msgPluginRecipients": "Destinatários",
   "msgPluginSender": "Remetente"
 }

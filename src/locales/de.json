@@ -3,6 +3,13 @@
   "noRendererMessage": "Kein Renderer für Dateityp: {{{ fileType }}}",
   "downloadButtonLabel": "Datei herunterladen",
   "brokenFile": "Ihre Datei ist defekt. Bitte überprüfen Sie sie auf Ihrem Rechner.",
+  "pdfRendererLoading": "Dokument wird geladen...",
+  "pdfRendererErrorTitle": "Datei konnte nicht zur Vorschau geladen werden",
+  "pdfRendererDocumentNotFound": "Dokument wurde nicht gefunden",
+  "pdfRendererFetchError": "Dokument konnte nicht geladen werden.",
+  "pdfRendererFetchErrorWithStatus": "Dokument konnte nicht geladen werden ({{ status }}).",
+  "pdfRendererRenderError": "Dokument konnte im iframe nicht angezeigt werden.",
+  "pdfRendererRetryButton": "Erneut versuchen",
   "msgPluginRecipients": "Empfänger",
   "msgPluginSender": "Absender"
 }

@@ -3,6 +3,13 @@
   "noRendererMessage": "{{{ fileType }}} : لا يمكننا عرض هذا النوع من الملفات",
   "downloadButtonLabel": "تحميل الملف",
   "brokenFile": "الملف تالف، يرجى التحقق منه على جهازك الخاص.",
+  "pdfRendererLoading": "جارٍ تحميل المستند...",
+  "pdfRendererErrorTitle": "تعذر تحميل الملف للمعاينة",
+  "pdfRendererDocumentNotFound": "تعذر العثور على المستند",
+  "pdfRendererFetchError": "تعذر تحميل المستند.",
+  "pdfRendererFetchErrorWithStatus": "تعذر تحميل المستند ({{ status }}).",
+  "pdfRendererRenderError": "حدث خطأ أثناء عرض المستند داخل iframe.",
+  "pdfRendererRetryButton": "إعادة المحاولة",
   "msgPluginRecipients": "المستلمين",
   "msgPluginSender": "المرسل"
 }
