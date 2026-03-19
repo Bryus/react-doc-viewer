@@ -58,6 +58,7 @@ File viewer for **React v18+**.
 | html      | text/html                                                                 | |
 | jpg       | image/jpg                                                                 | |
 | jpeg      | image/jpeg                                                                | |
+| pdf       | application/pdf                                                           | |
 | png       | image/png                                                                 | |
 | ppt       | application/vnd.ms-powerpoint                                             | Public URLs only! |
 | pptx      | application/vnd.openxmlformats-officedocument.presentationml.presentation | Public URLs only! |
@@ -101,8 +102,8 @@ import "@bryus/react-doc-viewer/dist/index.css";
 
 function App() {
   const docs = [
-    { uri: "https://url-to-my-image.png" }, // Remote file
-    { uri: require("./example-files/image.png") }, // Local File
+    { uri: "https://url-to-my-pdf.pdf" }, // Remote file
+    { uri: require("./example-files/pdf.pdf") }, // Local File
   ];
 
   return <DocViewer documents={docs} pluginRenderers={DocViewerRenderers} />;
@@ -119,8 +120,8 @@ import "@bryus/react-doc-viewer/dist/index.css";
 
 const App = () => {
   const docs = [
-    { uri: "https://url-to-my-image.png" }, // Remote file
-    { uri: require("./example-files/image.png") }, // Local File
+    { uri: "https://url-to-my-pdf.pdf" }, // Remote file
+    { uri: require("./example-files/pdf.pdf") }, // Local File
   ];
 
   return (
@@ -140,8 +141,8 @@ From version **1.11.0** you can control the displayed document through two props
 ```jsx
 const DocViewerControlOverDisplayedDocument = () => {
   const docs = [
-    { uri: "https://url-to-my-image.png" }, // Remote file
-    { uri: require("./example-files/image.png") }, // Local File
+    { uri: "https://url-to-my-pdf.pdf" }, // Remote file
+    { uri: require("./example-files/pdf.pdf") }, // Local File
   ];
   const [activeDocument, setActiveDocument] = useState(docs[0]);
 

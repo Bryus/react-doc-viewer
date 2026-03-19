@@ -1,5 +1,6 @@
 import { render, screen } from "@testing-library/react";
-import DocViewer from "../index";
+import { expect, vi } from "vitest";
+import DocViewer, { DocViewerRenderers, PDFRenderer } from "../index";
 
 import csvFile from "../exampleFiles/csv-file.csv?url";
 import gifFile from "../exampleFiles/gif-image.gif?url";
@@ -45,4 +46,21 @@ test("renders doc viewer with initialActiveDocument prop", () => {
   expect(screen.getByText(`Document 2 of ${docs.length}`)).toBeDefined();
   expect(proxyRenderer).toBeDefined();
   expect(proxyRenderer.querySelector("img")).toBeDefined();
+});
+
+test("registers the iframe-based PDF renderer", () => {
+  expect(DocViewerRenderers).toContain(PDFRenderer);
+  expect(PDFRenderer.fileTypes).toContain("application/pdf");
+});
+
+test("completes PDF fileLoader without using the default loader", () => {
+  const fileLoaderComplete = vi.fn();
+
+  PDFRenderer.fileLoader?.({
+    documentURI: "https://example.com/document.pdf",
+    signal: new AbortController().signal,
+    fileLoaderComplete,
+  });
+
+  expect(fileLoaderComplete).toHaveBeenCalledTimes(1);
 });
