@@ -1,6 +1,6 @@
 {
   "name": "@bryus/react-doc-viewer",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "publishConfig": {
     "access": "public"
   },
@@ -29,6 +29,12 @@
       "import": "./dist/react-doc-viewer.js",
       "require": "./dist/react-doc-viewer.cjs",
       "types": "./dist/index.d.ts"
+    },
+    "./models": {
+      "types": "./dist/models.d.ts"
+    },
+    "./dist/models": {
+      "types": "./dist/models.d.ts"
     },
     "./dist/index.css": {
       "import": "./dist/index.css",
